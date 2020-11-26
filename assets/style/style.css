@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* height: 100%; */
     box-sizing: border-box;
 }
 
@@ -81,7 +80,7 @@
 }
 .img-container {
     background-image: url("../photos/car-photo.jpeg");
-    height: 70vh;
+    height: 90vh;
     max-width: 1920px;
     background-position: center;
     background-repeat: no-repeat;
@@ -144,7 +143,7 @@
 }
 /* Banner + Hero Image ********************************************************* */
 
-/* Main Section ******************************************************  */
+/* Service Section ******************************************************  */
 .service-container {
     width: 100%;
     background-color: grey;
@@ -217,10 +216,60 @@
         justify-content: center;
     }
 }
+/* END Of Service Section ******************************************************  */
 
-/* END Of Main Section ******************************************************  */
+/* About Us Section************************************************************* */
+.about-container {
+    width: 100%;
+    background-color: grey;
+    padding-bottom: 15px;
+}
+.about-inner-container {
+    max-width: 1200px;
+    border: 1px solid white;
+    margin: 0 auto;
+    background: url(../photos/mainpic.jpg);
+    height: 800px;
+}
+.about-header {
+    border: 1px solid white;
+    width: 75%;
+    margin: 100px auto;
+    background-color: black;
+    opacity: 0.5;
+}
+.about-header h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Goldman' , sans-serif;
+    color: white;
+}
+
+@media only screen and (max-width: 767px) {
+    .about-inner-container {
+        background: url(../photos/mainpic.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: inherit;
+        max-width: 100%;
+    }
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* END of About Us Section************************************************************* */
 
 /* Footer Section************************************************************* */
 .footer {
