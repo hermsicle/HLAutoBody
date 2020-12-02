@@ -226,7 +226,7 @@
 }
 .about-inner-container {
     max-width: 1200px;
-    border: 1px solid white;
+    border-top: 1px solid steelblue;
     margin: 0 auto;
     background: url(../photos/mainpic.jpg);
     height: 800px;
@@ -236,7 +236,6 @@
     width: 75%;
     margin: 100px auto;
     background-color: black;
-    opacity: 0.5;
 }
 .about-header h3 {
     text-align: center;
