@@ -161,6 +161,7 @@
 }
 .service-header h2 {
     font-family: 'Goldman' , sans-serif;
+    /* font-family: 'Cinzel', serif; */
     color: white;
     text-align: center;
     font-size: 3.5rem;
@@ -189,8 +190,9 @@
 }
 .service-card p {
     color: white;
-    padding: 5px;
-    font-family: 'Goldman' , sans-serif;
+    padding: 15px;
+    /* font-family: 'Goldman' , sans-serif; */
+    font-family: 'Cinzel', serif;
     font-size: 1rem;
     text-align: center;
 }
@@ -254,6 +256,7 @@
     width: 75%;
     margin: 100px auto;
     background-color: grey;
+    opacity: 0.95;
     padding: 10px;
 }
 .about-header h3 {
@@ -263,9 +266,11 @@
     color: white;
 }
 .about-header p {
-    font-family: 'Goldman' , sans-serif;
+    /* font-family: 'Goldman' , sans-serif; */
+    font-family: 'Cinzel', serif;
     color: black;
     text-align: center;
+    font-size: 1.25rem;
 }
 
 @media only screen and (max-width: 767px) {
@@ -322,7 +327,8 @@
     width: 100%;
 }
 .location-container p {
-    font-family: 'Goldman' , sans-serif;
+    /* font-family: 'Goldman' , sans-serif; */
+    font-family: 'Cinzel', serif;
     color: white;
     margin-top: 10px;
 }
@@ -336,7 +342,8 @@
     width: 50%;
 }
 .days p, .hours p {
-    font-family: 'Goldman' , sans-serif;
+    /* font-family: 'Goldman' , sans-serif; */
+    font-family: 'Cinzel', serif;
     color: white;
     margin-top: 15px;
     font-size: 1.25rem;
@@ -370,7 +377,8 @@
     margin: 10px auto;
     background-color: black;
     color: white;
-    font-family: 'Goldman' , sans-serif;
+    /* font-family: 'Goldman' , sans-serif; */
+    font-family: 'Cinzel', serif;
     padding: 10px;
 }
 #textarea {
@@ -379,7 +387,8 @@
     margin: 10px auto;
     background-color: black;
     color: white;
-    font-family: 'Goldman' , sans-serif;
+    /* font-family: 'Goldman' , sans-serif; */
+    font-family: 'Cinzel', serif;
     padding: 10px;
 }
 #submitBtn {
@@ -389,7 +398,8 @@
     background-color: black;
     color: white;
     border: none;
-    font-family: 'Goldman' , sans-serif;
+    /* font-family: 'Goldman' , sans-serif; */
+    font-family: 'Cinzel', serif;
 }
 #submitBtn:hover, #submitBtn:active {
     color: #fe5d5c;
