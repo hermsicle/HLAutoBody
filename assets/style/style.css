@@ -131,14 +131,21 @@
     }
 }
 @media only screen and (max-width: 540px) {
+    .img-container {
+        height: 70vh;
+    }
     .inner-container {
         margin-top: 150px;
+        padding: 8px;
     }
     .inner-container h1 {
         font-size: 2em;
     }
     .inner-container h2 {
         font-size: 1em;
+    }
+    .inner-container .btn {
+        font-size: 1rem;
     }
 }
 /* Banner + Hero Image ********************************************************* */
@@ -215,6 +222,9 @@
         align-items: center;
         justify-content: center;
     }
+    .service-header h2 {
+        font-size: 2rem;
+    }
 }
 /* END Of Service Section ******************************************************  */
 
@@ -232,16 +242,22 @@
     height: 800px;
 }
 .about-header {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     width: 75%;
     margin: 100px auto;
-    background-color: black;
+    background-color: grey;
+    padding: 10px;
 }
 .about-header h3 {
     text-align: center;
     font-size: 2rem;
     font-family: 'Goldman' , sans-serif;
     color: white;
+}
+.about-header p {
+    font-family: 'Goldman' , sans-serif;
+    color: black;
+    text-align: center;
 }
 
 @media only screen and (max-width: 767px) {
