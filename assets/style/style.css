@@ -215,6 +215,14 @@
     transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
+@media only screen and (max-width: 1035px) {
+    .service-card-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .service-card-container {
         display: flex;
