@@ -1,0 +1,76 @@
+.contacts-container {
+    width: 100%;
+    background-color: white;
+    height: 70vh;
+    margin: 10px auto;
+}
+.contacts-inner-container {
+    width: 75%;
+    margin: 0 auto;
+}
+.form-container {
+    width: 90%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.form-container h2 {
+    font-size: 2rem;
+    margin: 10px auto;
+    font-family: 'Goldman' , sans-serif;
+    /* color: steelblue; */
+}
+.form-container .form-input {
+    padding: 10px 15px;
+    margin: 10px auto;
+    width: 90%;
+    font-family: 'Goldman' , sans-serif;
+}
+.form-container textarea {
+    width: 90%;
+    height: 150px;
+    margin: 10px auto;
+    padding: 10px 15px;
+    font-family: 'Goldman' , sans-serif;
+}
+.form-container .submit {
+    width: 150px;
+    padding: 10px 15px;
+    margin: 10px auto;
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: 'Goldman' , sans-serif;
+}
+.form-container .submit:hover {
+    color: steelblue;
+    transition: color 0.3s ease-in;
+}
+@media only screen and (max-width: 757px) {
+    .form-container .form-input {
+        width: 100%;
+    }
+    .form-container textarea {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .nav-ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+    }
+    .nav-ul.show {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+        margin-right: 10px;
+    }
+    .logo {
+        width: 250px;
+    }
+}
+

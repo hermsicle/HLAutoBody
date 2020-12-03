@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Section **************************************************************** */
+
+/* Nav Bar */
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: space-between;
+    padding: 15px;
+}
+.logo {
+    height: 100%;
+    width: 350px;
+}
+.logo:hover {
+    cursor: pointer;
+}
+.nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-ul li {
+    list-style: none;
+}
+.nav-ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-size: 1.25rem;
+    font-family: 'Goldman' , sans-serif;
+}
+.nav-ul li a:hover {
+    /* color: #fe5d5c; */
+    color: steelblue;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+.hamburger:focus {
+    outline: none;
+}
+
+/* Media Query when screen size is LESS than 767px */
+@media screen and (max-width: 767px) {
+    .nav-ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+    }
+    .nav-ul.show {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+        margin-right: 10px;
+    }
+    .logo {
+        width: 250px;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .nav-ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+    }
+    .nav-ul.show {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+        margin-right: 10px;
+    }
+    .logo {
+        width: 250px;
+    }
+}
+
+/* END of Nav Bar */
+
+
+/* Banner + Hero Image ********************************************************* */
+.hero-container {
+    background-color: black;
+    width: 100%;
+}
+.img-container {
+    background-image: url("../photos/car-photo.jpeg");
+    height: 90vh;
+    max-width: 1920px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+}
+.inner-container {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    color: white;
+    height: auto;
+    margin-top: 100px;
+}
+.inner-container h1 {
+    font-size: 5em;
+    font-family: 'Goldman' , sans-serif;
+    color: white;
+}
+.inner-container a {
+    margin-top: 20px;
+    font-size: 1.3em;
+    font-family: 'Goldman' , sans-serif;
+}
+.inner-container .btn {
+    display: inline-block;
+    width: 200px;
+    font-weight: bold;
+    padding: 10px;
+    color: black;
+    border: 4pm solid white;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    background-color: white;
+}
+.inner-container .btn:hover, .inner-container .btn:active {
+    background-color: steelblue;
+    color: white;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+@media only screen and (max-width: 960px){
+    .inner-container {
+        margin-top: 100px;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .img-container {
+        height: 70vh;
+    }
+    .inner-container {
+        margin-top: 150px;
+        padding: 8px;
+    }
+    .inner-container h1 {
+        font-size: 2em;
+    }
+    .inner-container h2 {
+        font-size: 1em;
+    }
+    .inner-container .btn {
+        font-size: 1rem;
+    }
+}
+/* Banner + Hero Image ********************************************************* */
+
+/* Service Section ******************************************************  */
+.service-container {
+    width: 100%;
+    /* background-color: grey; */
+    background-color: black;
+}
+.service-inner-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.service-header h2 {
+    font-family: 'Goldman' , sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 3.5rem;
+}
+.service-card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.service-card {
+    position: relative;
+    margin: 10px;
+    width: 320px;
+    height: 400px;
+    /* background-color: steelblue; */
+    background-color: white;
+}
+.service-card img {
+    width: 100%;
+    height: 50%;
+}
+.service-card h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: steelblue;
+    font-family: 'Goldman' , sans-serif;
+}
+.service-card p {
+    color: white;
+    color: black;
+    padding: 15px;
+    font-family: 'Goldman' , sans-serif;
+    font-size: 0.95rem;
+    text-align: center;
+}
+.service-card a {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 200px;
+    background-color: steelblue;
+    color: white;
+    /* background-color: black;
+    color: white; */
+    text-decoration: none;
+    font-family: 'Goldman' , sans-serif;
+    display: block;
+    text-align: center; 
+    margin: 10px auto;
+    padding: 10px 25px;
+}
+.service-card a:hover, .service-card a:active {
+    /* background-color: white; */
+    /* background-color: steelblue; */
+    /* color:  #fe5d5c; */
+    color: steelblue;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+@media only screen and (max-width: 1035px) {
+    .service-card-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .service-card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .service-header h2 {
+        font-size: 2rem;
+    }
+}
+/* END Of Service Section ******************************************************  */
+
+/* About Us Section************************************************************* */
+.about-container {
+    width: 100%;
+    /* background-color: grey; */
+    background-color: black;
+    padding-bottom: 15px;
+}
+.about-inner-container {
+    max-width: 1200px;
+    border-top: 1px solid steelblue;
+    margin: 0 auto;
+    background: url(../photos/mainpic.jpg);
+    height: 850px;
+}
+.about-header {
+    /* border: 1px solid white; */
+    width: 75%;
+    margin: 100px auto;
+    background-color: steelblue;
+    opacity: 0.95;
+    padding: 10px;
+}
+.about-header h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Goldman' , sans-serif;
+    color: white;
+    margin: 15px 0;
+}
+.about-header p {
+    font-family: 'Goldman' , sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .about-inner-container {
+        background: url(../photos/mainpic.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: inherit;
+        max-width: 100%;
+    }
+    .about-header {
+        width: 90%;
+        margin: 100px auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* END of About Us Section************************************************************* */
+
+/* Footer Section************************************************************* */
+.footer {
+    background-color: black;
+    width: 100%;
+}
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.location-container, .hours-container, .contact-container {
+    padding: 10px;
+    margin: 25px 0;
+    width: 350px;
+    background-color: white;
+}
+.location-container h3 {
+    text-align: center;
+    font-family: 'Goldman' , sans-serif;
+    color: steelblue;
+    font-size: 2rem;
+}
+.location-container img {
+    width: 100%;
+}
+.location-container p {
+    font-family: 'Goldman' , sans-serif;
+    margin-top: 10px;
+}
+.hours-container h3 {
+    font-family: 'Goldman' , sans-serif;
+    /* color: white; */
+    color: steelblue;
+    font-size: 2rem;
+    text-align: center;
+}
+.days, .hours {
+    width: 50%;
+}
+.days p, .hours p {
+    font-family: 'Goldman' , sans-serif;
+    margin-top: 15px;
+    font-size: 1.25rem;
+}
+.days {
+    float: left;
+}
+.hours {
+    float: right;
+}
+.hours p {
+    text-align: right;
+}
+.contact-form h3 {
+    font-family: 'Goldman' , sans-serif;
+    /* color: white; */
+    color: steelblue;
+    font-size: 2rem;
+    text-align: center;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+#input {
+    height: 45px;
+    width: 75%;
+    margin: 10px auto;
+    background-color: white;
+    color: black;
+    font-family: 'Goldman' , sans-serif;
+    padding: 10px;
+    border: 1px solid black;
+}
+.input {
+    height: 45px;
+    width: 75%;
+    margin: 10px auto;
+    background-color: white;
+    color: black;
+    font-family: 'Goldman' , sans-serif;
+    padding: 10px;
+    border: 1px solid black;
+}
+#textarea {
+    height: 90px;
+    width: 75%;
+    margin: 10px auto;
+    /* background-color: black; */
+    color: steelblue;
+    font-family: 'Goldman' , sans-serif;
+    padding: 10px;
+    /* border: none; */
+}
+#submitBtn {
+    padding: 10px 25px;
+    width: 75%;
+    margin: 10px auto;
+    background-color: steelblue;
+    color: white;
+    border: none;
+    font-family: 'Goldman' , sans-serif;
+}
+#submitBtn:hover, #submitBtn:active {
+    /* color: #fe5d5c; */
+    color: white;
+    transition: 0.3s color ease-in;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* END Footer Section************************************************************* */
