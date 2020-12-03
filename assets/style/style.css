@@ -161,8 +161,8 @@
 }
 .service-header h2 {
     font-family: 'Goldman' , sans-serif;
-    /* font-family: 'Cinzel', serif; */
     color: white;
+    /* color: black; */
     text-align: center;
     font-size: 3.5rem;
 }
@@ -176,7 +176,8 @@
     margin: 10px;
     width: 320px;
     height: 400px;
-    background-color: black;
+    /* background-color: black; */
+    background-color: white;
 }
 .service-card img {
     width: 100%;
@@ -185,15 +186,17 @@
 .service-card h3 {
     text-align: center;
     font-size: 1.5rem;
-    color: white;
+    /* color: white; */
+    color: black;
     font-family: 'Goldman' , sans-serif;
 }
 .service-card p {
-    color: white;
+    /* color: white; */
+    color: black;
     padding: 15px;
-    /* font-family: 'Goldman' , sans-serif; */
-    font-family: 'Cinzel', serif;
-    font-size: 1rem;
+    font-family: 'Goldman' , sans-serif;
+    /* font-family: 'Cinzel', serif; */
+    font-size: 0.95rem;
     text-align: center;
 }
 .service-card a {
@@ -202,8 +205,10 @@
     left: 0;
     right: 0;
     width: 200px;
-    background-color: white;
-    color: black;
+    /* background-color: white;
+    color: black; */
+    background-color: black;
+    color: white;
     text-decoration: none;
     font-family: 'Goldman' , sans-serif;
     display: block;
@@ -266,8 +271,7 @@
     color: white;
 }
 .about-header p {
-    /* font-family: 'Goldman' , sans-serif; */
-    font-family: 'Cinzel', serif;
+    font-family: 'Goldman' , sans-serif;
     color: black;
     text-align: center;
     font-size: 1.25rem;
@@ -283,18 +287,6 @@
         max-width: 100%;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* END of About Us Section************************************************************* */
@@ -327,8 +319,7 @@
     width: 100%;
 }
 .location-container p {
-    /* font-family: 'Goldman' , sans-serif; */
-    font-family: 'Cinzel', serif;
+    font-family: 'Goldman' , sans-serif;
     color: white;
     margin-top: 10px;
 }
@@ -342,8 +333,7 @@
     width: 50%;
 }
 .days p, .hours p {
-    /* font-family: 'Goldman' , sans-serif; */
-    font-family: 'Cinzel', serif;
+    font-family: 'Goldman' , sans-serif;
     color: white;
     margin-top: 15px;
     font-size: 1.25rem;
@@ -377,8 +367,7 @@
     margin: 10px auto;
     background-color: black;
     color: white;
-    /* font-family: 'Goldman' , sans-serif; */
-    font-family: 'Cinzel', serif;
+    font-family: 'Goldman' , sans-serif;
     padding: 10px;
 }
 #textarea {
@@ -387,8 +376,7 @@
     margin: 10px auto;
     background-color: black;
     color: white;
-    /* font-family: 'Goldman' , sans-serif; */
-    font-family: 'Cinzel', serif;
+    font-family: 'Goldman' , sans-serif;
     padding: 10px;
 }
 #submitBtn {
@@ -398,8 +386,7 @@
     background-color: black;
     color: white;
     border: none;
-    /* font-family: 'Goldman' , sans-serif; */
-    font-family: 'Cinzel', serif;
+    font-family: 'Goldman' , sans-serif;
 }
 #submitBtn:hover, #submitBtn:active {
     color: #fe5d5c;
