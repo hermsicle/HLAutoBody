@@ -19,6 +19,7 @@
     font-size: 2rem;
     margin: 10px auto;
     font-family: 'Goldman' , sans-serif;
+    /* color: steelblue; */
 }
 .form-container .form-input {
     padding: 10px 15px;
@@ -43,7 +44,7 @@
     font-family: 'Goldman' , sans-serif;
 }
 .form-container .submit:hover {
-    color: #fe5d5c;
+    color: steelblue;
     transition: color 0.3s ease-in;
 }
 @media only screen and (max-width: 757px) {
@@ -52,6 +53,24 @@
     }
     .form-container textarea {
         width: 100%;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .nav-ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+    }
+    .nav-ul.show {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+        margin-right: 10px;
+    }
+    .logo {
+        width: 250px;
     }
 }
 

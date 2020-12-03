@@ -19,6 +19,9 @@
     height: 100%;
     width: 350px;
 }
+.logo:hover {
+    cursor: pointer;
+}
 .nav-ul {
     display: flex;
     align-items: center;
@@ -35,7 +38,8 @@
     font-family: 'Goldman' , sans-serif;
 }
 .nav-ul li a:hover {
-    color: #fe5d5c;
+    /* color: #fe5d5c; */
+    color: steelblue;
     transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 .hamburger {
@@ -52,6 +56,24 @@
 
 /* Media Query when screen size is LESS than 767px */
 @media screen and (max-width: 767px) {
+    .nav-ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+    }
+    .nav-ul.show {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+        margin-right: 10px;
+    }
+    .logo {
+        width: 250px;
+    }
+}
+@media only screen and (max-width: 850px) {
     .nav-ul {
         display: none;
         width: 100%;
@@ -122,7 +144,8 @@
 }
 .inner-container .btn:hover, .inner-container .btn:active {
     background-color: white;
-    color:  #fe5d5c;
+    /* color:  #fe5d5c; */
+    color: steelblue;
     transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 @media only screen and (max-width: 960px){
@@ -153,7 +176,8 @@
 /* Service Section ******************************************************  */
 .service-container {
     width: 100%;
-    background-color: grey;
+    /* background-color: grey; */
+    background-color: black;
 }
 .service-inner-container {
     max-width: 1200px;
@@ -162,7 +186,6 @@
 .service-header h2 {
     font-family: 'Goldman' , sans-serif;
     color: white;
-    /* color: black; */
     text-align: center;
     font-size: 3.5rem;
 }
@@ -176,8 +199,8 @@
     margin: 10px;
     width: 320px;
     height: 400px;
-    /* background-color: black; */
-    background-color: white;
+    background-color: steelblue;
+    /* background-color: white; */
 }
 .service-card img {
     width: 100%;
@@ -186,16 +209,15 @@
 .service-card h3 {
     text-align: center;
     font-size: 1.5rem;
-    /* color: white; */
-    color: black;
+    color: white;
+    /* color: black; */
     font-family: 'Goldman' , sans-serif;
 }
 .service-card p {
-    /* color: white; */
-    color: black;
+    color: white;
+    /* color: black; */
     padding: 15px;
     font-family: 'Goldman' , sans-serif;
-    /* font-family: 'Cinzel', serif; */
     font-size: 0.95rem;
     text-align: center;
 }
@@ -205,10 +227,10 @@
     left: 0;
     right: 0;
     width: 200px;
-    /* background-color: white;
-    color: black; */
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
+    /* background-color: black;
+    color: white; */
     text-decoration: none;
     font-family: 'Goldman' , sans-serif;
     display: block;
@@ -217,8 +239,10 @@
     padding: 10px 25px;
 }
 .service-card a:hover, .service-card a:active {
-    background-color: white;
-    color:  #fe5d5c;
+    /* background-color: white; */
+    /* background-color: steelblue; */
+    /* color:  #fe5d5c; */
+    color: steelblue;
     transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
@@ -246,7 +270,8 @@
 /* About Us Section************************************************************* */
 .about-container {
     width: 100%;
-    background-color: grey;
+    /* background-color: grey; */
+    background-color: black;
     padding-bottom: 15px;
 }
 .about-inner-container {
@@ -260,7 +285,7 @@
     /* border: 1px solid white; */
     width: 75%;
     margin: 100px auto;
-    background-color: grey;
+    background-color: steelblue;
     opacity: 0.95;
     padding: 10px;
 }
@@ -269,10 +294,11 @@
     font-size: 2rem;
     font-family: 'Goldman' , sans-serif;
     color: white;
+    margin: 15px 0;
 }
 .about-header p {
     font-family: 'Goldman' , sans-serif;
-    color: black;
+    color: white;
     text-align: center;
     font-size: 1.25rem;
 }
@@ -285,6 +311,10 @@
         background-size: cover;
         width: inherit;
         max-width: 100%;
+    }
+    .about-header {
+        width: 90%;
+        margin: 100px auto;
     }
 }
 
@@ -307,7 +337,8 @@
     margin: 25px 0;
     width: 350px;
     border: 1px solid black;
-    background-color: gray;
+    /* background-color: gray; */
+    background-color: steelblue;
 }
 .location-container h3 {
     text-align: center;
@@ -365,31 +396,44 @@
     height: 45px;
     width: 75%;
     margin: 10px auto;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     font-family: 'Goldman' , sans-serif;
     padding: 10px;
+    border: none;
+}
+.input {
+    height: 45px;
+    width: 75%;
+    margin: 10px auto;
+    background-color: white;
+    color: black;
+    font-family: 'Goldman' , sans-serif;
+    padding: 10px;
+    border: none;
 }
 #textarea {
     height: 90px;
     width: 75%;
     margin: 10px auto;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     font-family: 'Goldman' , sans-serif;
     padding: 10px;
+    border: none;
 }
 #submitBtn {
     padding: 10px 25px;
     width: 75%;
     margin: 10px auto;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     border: none;
     font-family: 'Goldman' , sans-serif;
 }
 #submitBtn:hover, #submitBtn:active {
-    color: #fe5d5c;
+    /* color: #fe5d5c; */
+    color: steelblue;
     transition: 0.3s color ease-in;
 }
 
