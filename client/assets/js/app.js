@@ -7,5 +7,5 @@ hamburger.addEventListener('click' , () => {
 })
 
 logo.addEventListener('click' , () => {
-    window.location.href="../../index.html"
+    window.location.href="../../client/views/index.html"
 })
