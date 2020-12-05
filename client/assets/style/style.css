@@ -38,7 +38,6 @@
     font-family: 'Goldman' , sans-serif;
 }
 .nav-ul li a:hover {
-    /* color: #fe5d5c; */
     color: steelblue;
     transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
@@ -103,10 +102,9 @@
 .img-container {
     background-image: url("../photos/car-photo.jpeg");
     height: 90vh;
-    max-width: 1920px;
-    background-position: center;
+    background-position: 0 75%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     position: relative;
     margin: 0 auto;
 }
@@ -174,7 +172,6 @@
 /* Service Section ******************************************************  */
 .service-container {
     width: 100%;
-    /* background-color: grey; */
     background-color: black;
 }
 .service-inner-container {
@@ -194,10 +191,9 @@
 }
 .service-card {
     position: relative;
-    margin: 10px;
+    margin: 25px 0;
     width: 320px;
     height: 400px;
-    /* background-color: steelblue; */
     background-color: white;
 }
 .service-card img {
@@ -226,8 +222,6 @@
     width: 200px;
     background-color: steelblue;
     color: white;
-    /* background-color: black;
-    color: white; */
     text-decoration: none;
     font-family: 'Goldman' , sans-serif;
     display: block;
@@ -236,10 +230,7 @@
     padding: 10px 25px;
 }
 .service-card a:hover, .service-card a:active {
-    /* background-color: white; */
-    /* background-color: steelblue; */
-    /* color:  #fe5d5c; */
-    color: steelblue;
+    color: black;
     transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
