@@ -1,28 +1,14 @@
 const puppeteer = require('puppeteer');
-
-async function scrapeProduct(url) {
-    const browser = await puppeteer.launch();
-    const page = await browser.newPage();
-    await page.goto(url);
-
-    const docs = await page.evaluate(() => {
-        console.log(document)
-        // return {
-        //   title: document.documentElement.clientWidth,
-        //   desc: document.documentElement.clientHeight
-        // };
-      });
-    console.log(docs)
-
-    // const [el] = await page.$x('/html/body/div[2]/div[3]/div/div[3]/div/div/div[2]/div/div/div[1]/div/div[1]/div[3]/section/div[2]/div/ul/li[1]/div/div[2]/div[3]/p/span');
-    // const src = await el.getProperty('textContent');
-    // const name = await src.jsonValue();
-    // console.log({name})
-    // console.log(page)
+puppeteer.launch({ headless: true, args: ['--user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3312.0 Safari/537.36"'] }).then(async browser => {
+	const page = await browser.newPage();
+    // await page.goto("https://www.yelp.com/search?cflt=restaurants&find_loc=San Francisco, CA");
+    await page.goto("https://www.yelp.com/biz/h-and-l-auto-body-oakland");
+	await page.waitForSelector('body');
+    var rposts = await page.evaluate(() => {
+    
+    });
+    console.log(rposts);
     await browser.close();
-
-}
-
-
-//Invoke Function
-scrapeProduct('https://www.yelp.com/biz/h-and-l-auto-body-oakland');
+}).catch(function(error) {
+    console.error(error);
+});

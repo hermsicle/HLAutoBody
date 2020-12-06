@@ -9,7 +9,7 @@
     margin: 0 auto;
 }
 .form-container {
-    width: 90%;
+    width: 50%;
     margin: 100px auto;
     display: flex;
     flex-direction: column;
@@ -48,6 +48,9 @@
     transition: color 0.3s ease-in;
 }
 @media only screen and (max-width: 757px) {
+    .form-container {
+        width: 100%;
+    }
     .form-container .form-input {
         width: 100%;
     }

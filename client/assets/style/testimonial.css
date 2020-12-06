@@ -1,0 +1,46 @@
+.test-container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.test-inner-container h2 {
+    font-family: 'Goldman' , sans-serif;
+    margin: 10px 0;
+    color: steelblue;
+}
+.testimonials-container {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid steelblue;
+}
+.testimonials-container h4 {
+    font-family: 'Goldman' , sans-serif;
+    margin: 5px 0;
+}
+.testimonials-container p {
+    font-family: 'Goldman' , sans-serif;
+    margin-bottom: 10px;
+}
+.rating {
+    width: 100px;
+    height: 20px;
+    margin: 5px 0;
+}
+
+@media only screen and (max-width: 1100px) {
+    .test-inner-container {
+        margin-left: 20px;
+    }
+    .testimonials-container {
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 757px){
+    .test-inner-container {
+        margin-left: 20px;
+    }
+    .testimonials-container {
+        width: 90vw;
+    }
+}
