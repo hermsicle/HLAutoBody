@@ -5,7 +5,6 @@
 }
 
 /* Main Section **************************************************************** */
-
 .upper-nav {
     background-color: steelblue;
     height: 25px;
@@ -124,9 +123,7 @@
         width: 250px;
     }
 }
-
 /* END of Nav Bar */
-
 
 /* Banner + Hero Image ********************************************************* */
 .hero-container {
@@ -134,7 +131,6 @@
     width: 100%;
 }
 .img-container {
-    /* background-image: url("../photos/car-photo.jpeg"); */
     background-image: url("../photos/lambo.png");
     height: 80vh;
     background-position: center;
@@ -264,9 +260,9 @@
     text-align: center; 
     margin: 10px auto;
     padding: 10px 25px;
+    border: none;
 }
 .service-card a:hover, .service-card a:active {
-    /* background-color: black; */
     transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
@@ -314,7 +310,6 @@
     width: 600px;
     height: 750px;
 }
-/* This flip-card-inner is needed to position the front and back side */
 .flip-card {
     position: absolute;
     width: 100%;
@@ -418,7 +413,6 @@
     margin-right: 20px;
 }
 
-
 @media only screen and (max-width: 767px) {
     .about-inner-container {
         background: url(../photos/mainpic.jpg);
@@ -436,27 +430,6 @@
         width: 100%;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* END of About Us Section************************************************************* */
 
 /* Footer Section************************************************************* */
@@ -552,11 +525,9 @@
     height: 90px;
     width: 75%;
     margin: 10px auto;
-    /* background-color: black; */
     color: steelblue;
     font-family: 'Goldman' , sans-serif;
     padding: 10px;
-    /* border: none; */
 }
 #submitBtn {
     padding: 10px 25px;
@@ -568,7 +539,6 @@
     font-family: 'Goldman' , sans-serif;
 }
 #submitBtn:hover, #submitBtn:active {
-    /* color: #fe5d5c; */
     color: white;
     transition: 0.3s color ease-in;
     cursor: pointer;
@@ -582,5 +552,4 @@
         align-items: center;
     }
 }
-
 /* END Footer Section************************************************************* */
