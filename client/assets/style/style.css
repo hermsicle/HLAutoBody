@@ -229,7 +229,7 @@
     padding: 10px 25px;
 }
 .service-card a:hover, .service-card a:active {
-    color: black;
+    /* background-color: black; */
     transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
@@ -266,28 +266,74 @@
     border-top: 1px solid steelblue;
     margin: 0 auto;
     background: url(../photos/mainpic.jpg);
-    height: 850px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.about-header {
-    /* border: 1px solid white; */
-    width: 75%;
-    margin: 100px auto;
-    background-color: steelblue;
-    opacity: 0.95;
-    padding: 10px;
+.flip-card-container { 
+    position: relative;
+    width: 600px;
+    height: 80%;
+    border: 2px solid green;
 }
-.about-header h3 {
+/* This flip-card-inner is needed to position the front and back side */
+.flip-card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease;
+    transform-style: preserve-3d;
+}
+.flip-card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flip-card-front h3 {
     text-align: center;
     font-size: 2rem;
     font-family: 'Goldman' , sans-serif;
     color: white;
-    margin: 15px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid white;
 }
-.about-header p {
+.flip-card-front p {
     font-family: 'Goldman' , sans-serif;
     color: white;
     text-align: center;
     font-size: 1.25rem;
+    padding: 10px 0;
+}
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: rotateY(180deg);
+}
+#open-corousel {
+    padding: 10px 25px;
+    font-family: 'Goldman' , sans-serif;
+    background-color: steelblue;
+    color: white;
+    border: none;
+    margin-top: 25px;
+
+}
+#open-corousel:hover {
+    color: steelblue;
+    background-color: white;
+    cursor: pointer;
+    transition: color 0.3s ease-in, background-color 0.3s ease-in;
 }
 
 @media only screen and (max-width: 767px) {
