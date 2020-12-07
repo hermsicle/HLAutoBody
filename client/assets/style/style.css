@@ -266,7 +266,7 @@
     border-top: 1px solid steelblue;
     margin: 0 auto;
     background: url(../photos/mainpic.jpg);
-    height: 700px;
+    height: 850px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -275,8 +275,7 @@
 .flip-card-container { 
     position: relative;
     width: 600px;
-    height: 80%;
-    border: 2px solid green;
+    height: 750px;
 }
 /* This flip-card-inner is needed to position the front and back side */
 .flip-card {
@@ -294,6 +293,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 10px;
+    opacity: 0.75;
 }
 .flip-card-front h3 {
     text-align: center;
@@ -310,6 +313,19 @@
     font-size: 1.25rem;
     padding: 10px 0;
 }
+#flipToBack , #flipToFront{
+    padding: 10px 25px;
+    background-color: white;
+    border: none;
+    margin: 10px 0;
+    font-family: 'Goldman' , sans-serif;
+}
+#flipToBack:hover , #flipToFront:hover  {
+    cursor: pointer;
+    background-color: steelblue;
+    color: white;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
 .flip-card-back {
     position: absolute;
     width: 100%;
@@ -320,20 +336,45 @@
     align-items: center;
     transform: rotateY(180deg);
 }
-#open-corousel {
-    padding: 10px 25px;
-    font-family: 'Goldman' , sans-serif;
-    background-color: steelblue;
-    color: white;
-    border: none;
-    margin-top: 25px;
-
+.carousel {
+    max-width: 600px;
+    position: relative;
 }
-#open-corousel:hover {
-    color: steelblue;
+.carousel .carousel-item,
+.carousel .carousel-item-hidden {
+    display: none;
+}
+.carousel .carousel-item-visible {
+    display: block;
+}
+.carousel .carousel-item img {
+    width: 100%;
+    max-width: 600px;
+    max-height: 700px;
+}
+.carousel .carousel-actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel .carousel-actions button {
+    border-radius: 50px;
     background-color: white;
+    border: 0;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
-    transition: color 0.3s ease-in, background-color 0.3s ease-in;
+    width: 40px;
+    height: 40px;
+}
+.carousel .carousel-actions button#carousel-button-prev {
+    margin-left: 20px;
+}
+.carousel .carousel-actions button#carousel-button-next {
+    margin-right: 20px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -348,6 +389,9 @@
     .about-header {
         width: 90%;
         margin: 100px auto;
+    }
+    .flip-card-container {
+        width: 100%;
     }
 }
 
