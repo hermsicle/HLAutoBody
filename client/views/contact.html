@@ -33,13 +33,15 @@
     <div class="contacts-container">
         <div class="contacts-inner-container">
             <div class="form-container">
-                <h2>Contact</h2>
-                <input class="form-input" type="text" placeholder="Your Name">
-                <input class="form-input" type="text" placeholder="Your Email">
-                <input class="form-input" type="text" placeholder="Your Phone Number">
-                <input class="form-input" type="text" placeholder="Your Subject">
-                <textarea placeholder="Your Message"></textarea>
-                <input class="submit" type="submit" value="SEND">
+                <form action="https://formspree.io/f/xvovwgjp" method="POST">
+                    <h2>Contact</h2>
+                    <input class="form-input" name="name" type="text" placeholder="Your Name">
+                    <input class="form-input" name="email" type="text" placeholder="Your Email">
+                    <input class="form-input" name="phone" type="text" placeholder="Your Phone Number">
+                    <input class="form-input" name="subject" type="text" placeholder="Your Subject">
+                    <textarea name="message" placeholder="Your Message"></textarea>
+                    <input class="submit" type="submit" value="SEND">
+                </form>
             </div>
         </div>
     </div>
