@@ -9,4 +9,3 @@ hamburger.addEventListener('click' , () => {
 logo.addEventListener('click' , () => {
     window.location.href="../../client/views/index.html"
 })
-

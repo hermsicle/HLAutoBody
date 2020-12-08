@@ -40,6 +40,9 @@
 }
 
 /* Nav Bar */
+#home {
+    color: steelblue;
+}
 .navbar {
     width: 100%;
     display: flex;
