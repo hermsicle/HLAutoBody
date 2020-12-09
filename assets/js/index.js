@@ -17,7 +17,7 @@ flipToBack.addEventListener('click', () => {
 })
 
 flipToFront.addEventListener('click' , () => {
-    theCard.style.transform = "none"
+    theCard.style.transform = "rotateY(0)"
 })
 
 prevButton.addEventListener('click' , moveToPrevSlide)

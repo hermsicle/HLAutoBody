@@ -432,11 +432,6 @@
     .flip-card-container {
         width: 100%;
     }
-    .flip-card-front 
-    .flip-card-back {
-        backface-visibility: hidden;
-    }
-
 }
 /* END of About Us Section************************************************************* */
 
