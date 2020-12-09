@@ -432,6 +432,12 @@
     .flip-card-container {
         width: 100%;
     }
+    .flip-card-front #flipToBack {
+        display: none;
+    }
+    .flip-card-back {
+        display: none;
+    }
 }
 /* END of About Us Section************************************************************* */
 
