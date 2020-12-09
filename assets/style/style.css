@@ -384,8 +384,8 @@
 }
 .carousel .carousel-item img {
     width: 100%;
-    max-width: 450px;
-    max-height: 700px;
+    /* max-width: 450px; */
+    height: 750px;
 }
 .carousel .carousel-actions {
     display: flex;
@@ -432,9 +432,11 @@
     .flip-card-container {
         width: 100%;
     }
-    .flip-card-front {
+    .flip-card-front 
+    .flip-card-back {
         backface-visibility: hidden;
     }
+
 }
 /* END of About Us Section************************************************************* */
 
