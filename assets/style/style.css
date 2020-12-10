@@ -104,7 +104,7 @@
 }
 
 /* Media Query when screen size is LESS than 767px */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
     .nav-ul {
         display: none;
         width: 100%;
@@ -121,24 +121,6 @@
     .logo {
         width: 250px;
         margin: 0;
-    }
-}
-@media only screen and (max-width: 850px) {
-    .nav-ul {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-        height: auto;
-    }
-    .nav-ul.show {
-        display: flex;
-    }
-    .hamburger {
-        display: block;
-        margin-right: 10px;
-    }
-    .logo {
-        width: 250px;
     }
 }
 /* END of Nav Bar */
