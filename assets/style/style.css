@@ -7,7 +7,7 @@
 /* Main Section **************************************************************** */
 .upper-nav {
     background-color: steelblue;
-    height: 25px;
+    height: 5vh;
     width: 100%;
 }
 .upper-nav-inner {
@@ -18,15 +18,19 @@
     height: 100%;
     align-items: center;
 }
-.upper-nav h4 {
+.upper-nav h5 {
     color: white;
     font-family: 'Goldman' , sans-serif;
 }
+.upper-nav #phone-icon,
+.upper-nav #email-icon {
+    margin-right: 8px;
+}
 #phone {
-    margin-left: 25px;
+    margin-left: 100px;
 }
 #email {
-    margin-right: 25px;
+    margin-right: 100px;
 }
 #phone:hover,
 #email:hover {
@@ -34,15 +38,12 @@
 }
 
 @media only screen and (max-width: 757px) {
-    .upper-nav h4 {
-        font-size: 0.3rem;
+    .upper-nav {
+        display: none;
     }
 }
 
 /* Nav Bar */
-#home {
-    color: steelblue;
-}
 .navbar {
     width: 100%;
     display: flex;
@@ -69,13 +70,26 @@
 .nav-ul li a {
     text-decoration: none;
     color: white;
-    margin-right: 25px;
+    padding: 15px;
     font-size: 1.25rem;
     font-family: 'Goldman' , sans-serif;
+    display: inline-block;
 }
-.nav-ul li a:hover {
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: steelblue;
+    transition: width .3s;
+}
+.cool-link:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+.cool-link:hover{
     color: steelblue;
-    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    transition: color 0.3s;
 }
 .hamburger {
     background-color: transparent;
@@ -106,6 +120,7 @@
     }
     .logo {
         width: 250px;
+        margin: 0;
     }
 }
 @media only screen and (max-width: 850px) {
@@ -130,12 +145,11 @@
 
 /* Banner + Hero Image ********************************************************* */
 .hero-container {
-    background-color: black;
     width: 100%;
 }
 .img-container {
     background-image: url("../photos/lambo.png");
-    height: 80vh;
+    height: 90vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -186,7 +200,8 @@
 }
 @media only screen and (max-width: 757px) {
     .img-container {
-        height: 70vh;
+        margin-top: 25%;
+        height: 80vh;
         background-size: cover;
     }
     .inner-container {
@@ -204,6 +219,57 @@
 }
 /* Banner + Hero Image ********************************************************* */
 
+/* About Section ****************************************************************/
+.about-container {
+    width: 100%;
+    background: url('../photos/mainpic.jpg');
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 0.85;
+    margin-bottom: 80px;
+}
+.about-container-inner {
+    max-width: 600px;
+    position: absolute;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 15px;
+}
+.about-container-inner h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 10px;
+    border-bottom: 1px solid white;
+    width: 250px;
+    text-align: center;
+    font-family: 'Goldman' , sans-serif;
+}
+.about-container-inner p {
+    margin: 10px;
+    font-size: 1.25rem;
+    font-family: 'Goldman' , sans-serif;
+}
+
+@media only screen and (max-width: 757px) {
+    .about-container-inner h1 {
+        font-size: 2rem;
+    }
+    .about-container p {
+        font-size: 1.0rem;
+    }
+}
+
+
+/* END of About Section *************************************************************** */
+
 /* Service Section ******************************************************  */
 .service-container {
     width: 100%;
@@ -217,7 +283,8 @@
     font-family: 'Goldman' , sans-serif;
     color: white;
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+    font-weight: lighter;
 }
 .service-card-container {
     display: flex;
@@ -230,7 +297,10 @@
     width: 320px;
     height: 400px;
     background-color: white;
+    box-shadow: 5px 5px 0 steelblue;
 }
+
+
 .service-card img {
     width: 100%;
     height: 50%;
@@ -280,9 +350,23 @@
 @media only screen and (max-width: 767px) {
     .service-card-container {
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: center;
         justify-content: center;
+    }
+    .service-card {
+        width: 200px;
+        height: 300px;
+        margin: 25px;
+    }
+    .service-card h3 {
+        font-size: 1.0rem;
+    }
+    .service-card p {
+        font-size: 0.25rem;
+    }
+    .service-card a {
+        font-size: 0.5rem;
     }
     .service-header h2 {
         font-size: 2rem;
@@ -290,160 +374,11 @@
 }
 /* END Of Service Section ******************************************************  */
 
-/* About Us Section************************************************************* */
-.about-container {
-    width: 100%;
-    /* background-color: grey; */
-    background-color: black;
-    padding-bottom: 15px;
-}
-.about-inner-container {
-    max-width: 1200px;
-    border-top: 1px solid steelblue;
-    margin: 0 auto;
-    background: url(../photos/mainpic.jpg);
-    height: 850px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.flip-card-container { 
-    position: relative;
-    width: 600px;
-    height: 750px;
-}
-.flip-card {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition: all 0.8s ease;
-    transform-style: preserve-3d;
-}
-.flip-card-front {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    padding: 10px;
-    opacity: 0.75;
-}
-.flip-card-front h3 {
-    text-align: center;
-    font-size: 2rem;
-    font-family: 'Goldman' , sans-serif;
-    color: white;
-    padding: 10px 0;
-    border-bottom: 1px solid white;
-}
-.flip-card-front p {
-    font-family: 'Goldman' , sans-serif;
-    color: white;
-    text-align: center;
-    font-size: 1.25rem;
-    padding: 10px 0;
-}
-#flipToBack , #flipToFront{
-    padding: 10px 25px;
-    background-color: white;
-    border: none;
-    margin: 10px 0;
-    font-family: 'Goldman' , sans-serif;
-}
-#flipToBack:hover , #flipToFront:hover  {
-    cursor: pointer;
-    background-color: steelblue;
-    color: white;
-    transition: background-color 0.3s ease-in, color 0.3s ease-in;
-}
-.flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transform: rotateY(180deg);
-}
-.carousel {
-    max-width: 600px;
-    position: relative;
-}
-.carousel .carousel-item,
-.carousel .carousel-item-hidden {
-    display: none;
-}
-.carousel .carousel-item-visible {
-    display: block;
-}
-.carousel .carousel-item img {
-    width: 100%;
-    /* max-width: 450px; */
-    height: 750px;
-}
-.carousel .carousel-actions {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.carousel .carousel-actions button {
-    border-radius: 50px;
-    background-color: white;
-    border: 0;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-}
-.carousel .carousel-actions button:hover {
-    opacity: 0.75;
-    transition: all 0.3s ease-in;
-}
-.carousel .carousel-actions button#carousel-button-prev {
-    margin-left: 20px;
-}
-.carousel .carousel-actions button#carousel-button-next {
-    margin-right: 20px;
-}
 
-@media only screen and (max-width: 767px) {
-    .about-inner-container {
-        background: url(../photos/mainpic.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: inherit;
-        max-width: 100%;
-    }
-    .about-header {
-        width: 90%;
-        margin: 100px auto;
-    }
-    .flip-card-container {
-        width: 100%;
-    }
-    .flip-card-front #flipToBack {
-        display: none;
-    }
-    .flip-card-back {
-        display: none;
-    }
-}
-/* END of About Us Section************************************************************* */
 
 /* Footer Section************************************************************* */
 .footer {
-    background-color: black;
+    background-color: white;
     width: 100%;
 }
 .footer-container {
@@ -455,8 +390,9 @@
 .location-container, .hours-container, .contact-container {
     padding: 10px;
     margin: 25px 0;
-    width: 350px;
-    background-color: white;
+    width: 320px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 0 #000;
 }
 .location-container h3 {
     text-align: center;
@@ -473,7 +409,6 @@
 }
 .hours-container h3 {
     font-family: 'Goldman' , sans-serif;
-    /* color: white; */
     color: steelblue;
     font-size: 2rem;
     text-align: center;
@@ -497,7 +432,6 @@
 }
 .contact-form h3 {
     font-family: 'Goldman' , sans-serif;
-    /* color: white; */
     color: steelblue;
     font-size: 2rem;
     text-align: center;
