@@ -355,7 +355,6 @@
 @media only screen and (max-width: 767px) {
     .service-card-container {
         display: flex;
-        /* flex-direction: column; */
         align-items: center;
         justify-content: center;
     }
@@ -377,7 +376,105 @@
         font-size: 2rem;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .service-card {
+        width: 400px;
+        height: 400px;
+        margin: 25px;
+    }
+    .service-card h3 {
+        font-size: 1.5rem;
+    }
+    .service-card p {
+        font-size: 1rem;
+    }
+    .service-card a {
+        font-size: 1rem;
+    }
+    .service-header h2 {
+        font-size: 2rem;
+    }
+}
 /* END Of Service Section ******************************************************  */
+
+.choose-us-container {
+    width: 100%;
+    background-color: black;
+    margin-bottom: 30px;
+}
+
+.choose-us-container-inner {
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: white;
+    box-shadow: 5px 5px 0 steelblue;
+}
+
+.choose-us-container-header {
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Goldman' , sans-serif;
+    color: steelblue;
+}
+
+.choose-us-container-reasons {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+}
+
+.reasons-card {
+    height: 150px;
+    width: 450px;
+    padding: 10px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    height: auto;
+}
+.reasons-card h1 {
+    font-family: 'Goldman' , sans-serif;
+    color: steelblue;
+}
+.reasons-card h4 {
+    margin: 10px 0;
+    font-family: 'Goldman' , sans-serif;
+}
+.reasons-card p {
+    margin: 10px 0;
+    font-family: 'Goldman' , sans-serif;
+    font-style: italic;
+}
+@media only screen and (max-width: 767px) {
+    .choose-us-container-reasons {
+        flex-direction: column;
+    }
+    .reasons-card {
+        width: 75%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
