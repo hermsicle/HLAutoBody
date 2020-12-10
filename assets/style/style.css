@@ -286,6 +286,11 @@
     font-size: 2.5rem;
     font-weight: lighter;
 }
+.service-header p {
+    color: white;
+    text-align: center;
+    font-family: 'Goldman' , sans-serif;
+}
 .service-card-container {
     display: flex;
     justify-content: space-between;
@@ -299,7 +304,6 @@
     background-color: white;
     box-shadow: 5px 5px 0 steelblue;
 }
-
 
 .service-card img {
     width: 100%;
@@ -318,6 +322,7 @@
     font-family: 'Goldman' , sans-serif;
     font-size: 0.95rem;
     text-align: center;
+    font-style: italic;
 }
 .service-card a {
     position: absolute;
@@ -406,6 +411,7 @@
 .location-container p {
     font-family: 'Goldman' , sans-serif;
     margin-top: 10px;
+    font-style: italic;
 }
 .hours-container h3 {
     font-family: 'Goldman' , sans-serif;
@@ -420,6 +426,7 @@
     font-family: 'Goldman' , sans-serif;
     margin-top: 15px;
     font-size: 1.25rem;
+    font-style: italic;
 }
 .days {
     float: left;
