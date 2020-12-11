@@ -64,6 +64,8 @@
         </div>
     </div>
 
+    <div class=".js-tilt" data-tilt></div>
+
     <!-- Services -->
     <div class="service-container" id="services">
         <div class="service-inner-container">
@@ -76,41 +78,53 @@
                 </p>
             </div>
             <div class="service-card-container">
-                <div class="service-card">
-                    <img src="./assets/photos/major_collision.jpg">
-                    <h3>Major Collision Damage</h3>
-                    <p>If your car is involved in a serious accident, you can put your trust in us to fix and repair your car back to its pre-collision condition! We work with all insruance companies.</p>
-                    <a href="./contact.html" class="contact-btn">Contact Us</a>
+                <div class=".js-tilt" data-tilt>
+                    <div class="service-card">
+                        <img src="./assets/photos/major_collision.jpg">
+                        <h3>Major Collision Damage</h3>
+                        <p>If your car is involved in a serious accident, you can put your trust in us to fix and repair your car back to its pre-collision condition! We work with all insruance companies.</p>
+                        <a href="./contact.html" class="contact-btn">Contact Us</a>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <img src="./assets/photos/dent_ding.png">
-                    <h3>Dents & Dings</h3>
-                    <p>Dents and dings can be really annoying to look at, come bring your car in and we will fix it for you making your car look brand new again.</p>
-                    <a href="./contact.html" class="contact-btn">Contact Us</a>
+                <div class=".js-tilt" data-tilt>
+                    <div class="service-card">
+                        <img src="./assets/photos/dent_ding.png">
+                        <h3>Dents & Dings</h3>
+                        <p>Dents and dings can be really annoying to look at, come bring your car in and we will fix it for you making your car look brand new again.</p>
+                        <a href="./contact.html" class="contact-btn">Contact Us</a>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <img src="./assets/photos/frame_damage.jpg">
-                    <h3>Frame Damage Repair</h3>
-                    <p>We specialize in fixing frame damages and will get your car running straight again if there is frame damage.</p>
-                    <a href="./contact.html" class="contact-btn">Contact Us</a>
+                <div class=".js-tilt" data-tilt>
+                    <div class="service-card">
+                        <img src="./assets/photos/frame_damage.jpg">
+                        <h3>Frame Damage Repair</h3>
+                        <p>We specialize in fixing frame damages and will get your car running straight again if there is frame damage.</p>
+                        <a href="./contact.html" class="contact-btn">Contact Us</a>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <img src="./assets/photos/paint.jpg">
-                    <h3>Painting</h3>
-                    <p>If you want to touch up or do any paint work on your car, do not hesistate to come and ask for a quote!</p>
-                    <a href="./contact.html" class="contact-btn">Contact Us</a>
+                <div class=".js-tilt" data-tilt>
+                    <div class="service-card">
+                        <img src="./assets/photos/paint.jpg">
+                        <h3>Painting</h3>
+                        <p>If you want to touch up or do any paint work on your car, do not hesistate to come and ask for a quote!</p>
+                        <a href="./contact.html" class="contact-btn">Contact Us</a>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <img src="./assets/photos/oil-change.jpg">
-                    <h3>Oil Change</h3>
-                    <p>It is important to do routine oil changes on your car, otherwise it won't be running as good as it should. We can get you in and out with a quick oil change today!</p>
-                    <a href="./contact.html" class="contact-btn">Contact Us</a>
+                <div class=".js-tilt" data-tilt>
+                    <div class="service-card">
+                        <img src="./assets/photos/oil-change.jpg">
+                        <h3>Oil Change</h3>
+                        <p>It is important to do routine oil changes on your car, otherwise it won't be running as good as it should. We can get you in and out with a quick oil change today!</p>
+                        <a href="./contact.html" class="contact-btn">Contact Us</a>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <img src="./assets/photos/Brake-Pads-and-Rotors.jpg">
-                    <h3>Brakes</h3>
-                    <p>Are your brakes making noises? Are they feeling a bit mushy? Come by and we will see what the issue is and resolve it right away.</p>
-                    <a href="./contact.html" class="contact-btn">Contact Us</a>
+                <div class=".js-tilt" data-tilt>
+                    <div class="service-card">
+                        <img src="./assets/photos/Brake-Pads-and-Rotors.jpg">
+                        <h3>Brakes</h3>
+                        <p>Are your brakes making noises? Are they feeling a bit mushy? Come by and we will see what the issue is and resolve it right away.</p>
+                        <a href="./contact.html" class="contact-btn">Contact Us</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -196,6 +210,10 @@
     <!-- User JS  -->
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/index.js"></script>
+    <script type="text/javascript" src="./vanilla-tilt.js">
+    const element = document.querySelector(".js-tilt");
+    VanillaTilt.init(element);
+    </script>
 </body>
 
 </html>
